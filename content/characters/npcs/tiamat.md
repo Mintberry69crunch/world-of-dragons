@@ -1,6 +1,6 @@
 # Тиамат
 
-**Портрет:** ![portrait](../../portraits/Тиамат1.char.png)
+**Портрет:** ![portrait](https://res.cloudinary.com/dlqsgzg1i/image/upload/v1780224810/%D0%A2%D0%B8%D0%B0%D0%BC%D0%B0%D1%821.char_hjor8f.png)
 
 ## Характер
 
