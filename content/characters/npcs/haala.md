@@ -1,4 +1,6 @@
-# Хаала
+---
+title: Хаала
+---
 
 **Портрет:** ![portrait](https://res.cloudinary.com/dlqsgzg1i/image/upload/v1780227215/portraits/%D0%A5%D0%B0%D0%B0%D0%BB%D0%B0.char.png)
 

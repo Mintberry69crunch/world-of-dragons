@@ -1,4 +1,6 @@
-# Ху Тао
+---
+title: Ху Тао
+---
 
 **Портрет:** ![portrait](https://res.cloudinary.com/dlqsgzg1i/image/upload/v1780227217/portraits/%D0%A5%D1%83-%D0%A2%D0%B0%D0%BE.char.png)
 

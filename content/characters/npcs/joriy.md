@@ -1,4 +1,6 @@
-# Жорий
+---
+title: Жорий
+---
 
 **Портрет:** ![portrait](https://res.cloudinary.com/dlqsgzg1i/image/upload/v1780227218/portraits/%D0%96%D0%BE%D1%80%D0%B8%D0%B9%D0%94%D0%BE%D0%B1%D1%80%D0%BE%D0%BF%D1%83%D0%B7.char.png)
 

@@ -1,4 +1,6 @@
-# Бафомет
+---
+title: Бафомет
+---
 
 **Портрет:** ![portrait](https://res.cloudinary.com/dlqsgzg1i/image/upload/v1780227212/portraits/%D0%91%D0%B0%D1%84%D0%BE%D0%BC%D0%B5%D1%82.png)
 
