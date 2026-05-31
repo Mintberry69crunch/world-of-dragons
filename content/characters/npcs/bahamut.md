@@ -1,4 +1,4 @@
-**Портрет:** ![portrait](https://res.cloudinary.com/dlqsgzg1i/image/upload/v1780224809/%D0%91%D0%B0%D0%B3%D0%B0%D0%BC%D1%83%D1%82.char_wahpoe.jpg)
+**Портрет:** ![portrait](https://res.cloudinary.com/dlqsgzg1i/image/upload/v1780227211/portraits/%D0%91%D0%B0%D0%B3%D0%B0%D0%BC%D1%83%D1%82.char.jpg)
 
 ## Предыстория
 
