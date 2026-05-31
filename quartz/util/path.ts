@@ -237,11 +237,13 @@ export function transformLink(src: FullSlug, target: string, opts: TransformOpti
     let [targetCanonical, targetAnchor] = splitAnchor(canonicalSlug)
 
     if (opts.strategy === "shortest") {
-      // if the file name is unique, then it's just the filename
+      // Use only the final filename segment for matching — this lets relative paths like
+      // ../npcs/quirell.md resolve the same way as bare names like quirell or quirell.md
+      const fileNameForMatch = targetCanonical.split("/").at(-1) ?? targetCanonical
       const matchingFileNames = opts.allSlugs.filter((slug) => {
         const parts = slug.split("/")
         const fileName = parts.at(-1)
-        return targetCanonical === fileName
+        return fileNameForMatch === fileName
       })
 
       // only match, just use it
