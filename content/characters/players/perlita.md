@@ -7,7 +7,7 @@ title: Перлита
 **Фракция:** ""
 **Местоположение:** [Клертон](../../locations/clerton.md)
 **Статус:** Жива
-**Портрет:** ![Перлита](../../portraits/Перлита.png)
+**Портрет:** ![portrait](https://res.cloudinary.com/dlqsgzg1i/image/upload/v1780227234/portraits/%D0%9F%D0%B5%D1%80%D0%BB%D0%B8%D1%82%D0%B0.png)
 
 ## Основные сведения
 
