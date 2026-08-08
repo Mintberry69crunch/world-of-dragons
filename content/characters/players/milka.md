@@ -1,5 +1,6 @@
 ---
 title: Милька (Эмиль)
+socialImage: https://res.cloudinary.com/dlqsgzg1i/image/upload/v1780227228/portraits/%D0%9C%D0%B8%D0%BB%D1%8C%D0%BA%D0%B0.char.png
 ---
 
 **Портрет:** ![portrait](https://res.cloudinary.com/dlqsgzg1i/image/upload/v1780227228/portraits/%D0%9C%D0%B8%D0%BB%D1%8C%D0%BA%D0%B0.char.png)

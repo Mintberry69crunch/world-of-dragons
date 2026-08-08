@@ -1,5 +1,6 @@
 ---
 title: Миртан
+socialImage: https://res.cloudinary.com/dlqsgzg1i/image/upload/v1780227229/portraits/%D0%9C%D0%B8%D1%80%D1%82%D0%B0%D0%BD.jpg
 ---
 
 **Раса:** Хобгоблин

@@ -1,5 +1,6 @@
 ---
 title: Сура
+socialImage: https://res.cloudinary.com/dlqsgzg1i/image/upload/v1780227238/portraits/%D0%A1%D1%83%D1%80%D0%B0.char.png
 ---
 
 **Раса:** Дженази (огненная)

@@ -1,5 +1,6 @@
 ---
 title: Туман над лесным озером
+socialImage: https://res.cloudinary.com/dlqsgzg1i/image/upload/v1780227251/portraits/%D0%A2%D1%83%D0%BC%D0%B0%D0%BD.char.png
 ---
 
 **Раса:** Табакси

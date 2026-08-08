@@ -1,5 +1,6 @@
 ---
 title: Жанна
+socialImage: https://res.cloudinary.com/dlqsgzg1i/image/upload/v1780227244/portraits/%D0%96%D0%B0%D0%BD%D0%BD%D0%B0.char.png
 ---
 
 **Портрет:** ![portrait](https://res.cloudinary.com/dlqsgzg1i/image/upload/v1780227244/portraits/%D0%96%D0%B0%D0%BD%D0%BD%D0%B0.char.png)

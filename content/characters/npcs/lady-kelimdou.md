@@ -1,5 +1,6 @@
 ---
 title: Леди Келимдоу
+socialImage: https://res.cloudinary.com/dlqsgzg1i/image/upload/v1780227220/portraits/%D0%9A%D0%B5%D0%BB%D0%B8%D0%BC%D0%B4%D0%BE%D1%83.char.png
 ---
 
 **Раса:**  эльф

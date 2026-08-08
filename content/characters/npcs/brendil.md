@@ -1,5 +1,6 @@
 ---
 title: Брендил
+socialImage: https://res.cloudinary.com/dlqsgzg1i/image/upload/v1786209465/wvnrygeizqygzwyezmlj.png
 ---
 
 **Раса:** Человек

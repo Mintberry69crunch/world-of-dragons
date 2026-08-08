@@ -1,5 +1,6 @@
 ---
 title: Велес
+socialImage: https://res.cloudinary.com/dlqsgzg1i/image/upload/v1780227242/portraits/%D0%92%D0%B5%D0%BB%D0%B5%D1%81.char.png
 ---
 
 **Раса:** Лич 

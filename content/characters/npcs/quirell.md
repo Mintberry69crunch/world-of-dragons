@@ -1,5 +1,6 @@
 ---
 title: Квирелл
+socialImage: https://res.cloudinary.com/dlqsgzg1i/image/upload/v1780227235/portraits/%D0%9A%D0%B2%D0%B8%D1%80%D0%B5%D0%BB%D0%BB.char.png
 ---
 
 **Раса:** Человек

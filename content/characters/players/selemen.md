@@ -1,5 +1,6 @@
 ---
 title: Селемене
+socialImage: https://res.cloudinary.com/dlqsgzg1i/image/upload/v1780254624/%D0%A1%D0%B5%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D0%B5.char_xlou68.png
 ---
 
 **Портрет:** ![portrait|209](https://res.cloudinary.com/dlqsgzg1i/image/upload/v1780254624/%D0%A1%D0%B5%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D0%B5.char_xlou68.png)

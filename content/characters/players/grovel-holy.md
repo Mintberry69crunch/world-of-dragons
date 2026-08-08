@@ -1,5 +1,6 @@
 ---
 title: Гровель (Святой)
+socialImage: https://res.cloudinary.com/dlqsgzg1i/image/upload/v1780227247/portraits/%D0%93%D1%80%D0%BE%D0%B2%D0%B5%D0%BB%D1%8C%D0%A3%D1%81%D0%B0%D1%87.png
 ---
 
 **Раса:** Драконорожденный 

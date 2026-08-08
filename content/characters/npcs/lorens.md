@@ -1,5 +1,6 @@
 ---
 title: Лоренс
+socialImage: https://res.cloudinary.com/dlqsgzg1i/image/upload/v1780227221/portraits/%D0%9B%D0%BE%D1%80%D0%B5%D0%BD%D1%81.char.png
 ---
 
 **Раса:** Человек

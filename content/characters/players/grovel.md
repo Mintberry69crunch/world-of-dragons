@@ -1,5 +1,6 @@
 ---
 title: Гровель
+socialImage: https://res.cloudinary.com/dlqsgzg1i/image/upload/v1780227248/portraits/%D0%93%D1%80%D0%BE%D0%B2%D0%B5%D0%BB%D1%8C%D0%A2%D0%B5%D0%BC%D0%BD%D1%8B%D0%B9.char.png
 ---
 
 **Раса:** Драконорожденный

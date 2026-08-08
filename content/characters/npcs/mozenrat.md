@@ -1,5 +1,6 @@
 ---
 title: Мозенрат
+socialImage: https://res.cloudinary.com/dlqsgzg1i/image/upload/v1780227066/portraits/%D0%9C%D0%BE%D0%B7%D0%B5%D0%BD%D1%80%D0%B0%D1%82.char.png
 ---
 
 **Раса:** Эльф

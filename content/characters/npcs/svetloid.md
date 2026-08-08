@@ -1,5 +1,6 @@
 ---
 title: Светлоид
+socialImage: https://res.cloudinary.com/dlqsgzg1i/image/upload/v1780252621/%D0%A1%D0%B2%D0%B5%D1%82%D0%BB%D0%BE%D0%B8%D0%B4.char_frukzy.png
 ---
 
 **Раса:** Дэва

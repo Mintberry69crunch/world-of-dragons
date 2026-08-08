@@ -1,5 +1,6 @@
 ---
 title: Тархун
+socialImage: https://res.cloudinary.com/dlqsgzg1i/image/upload/v1780227239/portraits/%D0%A2%D0%B0%D1%80%D1%85%D1%83%D0%BD.char.png
 ---
 
 **Раса:** Драконорождённый

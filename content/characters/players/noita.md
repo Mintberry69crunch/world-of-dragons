@@ -1,5 +1,6 @@
 ---
 title: Нойта
+socialImage: https://res.cloudinary.com/dlqsgzg1i/image/upload/v1780227252/portraits/%D0%9D%D0%BE%D0%B9%D1%82%D0%B0.png
 ---
 
 **Раса:** Полукто-то(сын морской карги)

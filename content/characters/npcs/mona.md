@@ -1,5 +1,6 @@
 ---
 title: Мона
+socialImage: https://res.cloudinary.com/dlqsgzg1i/image/upload/v1780227231/portraits/%D0%9C%D0%BE%D0%BD%D0%B0.char.png
 ---
 
 **Раса:** Демон 

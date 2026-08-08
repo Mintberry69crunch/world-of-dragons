@@ -1,5 +1,6 @@
 ---
 title: Умник
+socialImage: https://res.cloudinary.com/dlqsgzg1i/image/upload/v1780227241/portraits/%D0%A3%D0%BC%D0%BD%D0%B8%D0%BA.png
 ---
 
 **Раса:** Три-крин

@@ -1,5 +1,6 @@
 ---
 title: Сигмайер
+socialImage: https://res.cloudinary.com/dlqsgzg1i/image/upload/v1780227236/portraits/%D0%A1%D0%B8%D0%B3%D0%BC%D0%B0%D0%B9%D0%B5%D1%80.char.png
 ---
 
 **Раса:** Древний дракон

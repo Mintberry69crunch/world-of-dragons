@@ -1,5 +1,6 @@
 ---
 title: Обрагос
+socialImage: https://res.cloudinary.com/dlqsgzg1i/image/upload/v1780227233/portraits/%D0%9E%D0%B1%D1%80%D0%B0%D0%B3%D0%BE%D1%81.char.png
 ---
 
 **Раса:** Красный дракон

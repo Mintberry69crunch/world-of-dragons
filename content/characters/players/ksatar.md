@@ -1,5 +1,6 @@
 ---
 title: Ксатар
+socialImage: https://res.cloudinary.com/dlqsgzg1i/image/upload/v1780227249/portraits/%D0%9A%D1%81%D0%B0%D1%82%D0%B0%D1%80.char.png
 ---
 
 **Раса:** Три-крин

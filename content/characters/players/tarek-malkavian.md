@@ -1,5 +1,6 @@
 ---
 title: Тарек Малкавиан
+socialImage: https://res.cloudinary.com/dlqsgzg1i/image/upload/v1786208141/%D0%A2%D0%B0%D1%80%D0%B5%D0%BA_bydnxy.png
 ---
 
 **Раса:** Человек

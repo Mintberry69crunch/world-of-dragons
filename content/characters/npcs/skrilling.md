@@ -1,5 +1,6 @@
 ---
 title: Скриллинг
+socialImage: https://res.cloudinary.com/dlqsgzg1i/image/upload/v1780227237/portraits/%D0%A1%D0%BA%D1%80%D0%B8%D0%BB%D0%BB%D0%B8%D0%BD%D0%B3.char.png
 ---
 
 **Раса:** Металический дракон

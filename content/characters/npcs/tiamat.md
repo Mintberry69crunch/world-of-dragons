@@ -1,5 +1,6 @@
 ---
 title: Тиамат
+socialImage: https://res.cloudinary.com/dlqsgzg1i/image/upload/v1780227240/portraits/%D0%A2%D0%B8%D0%B0%D0%BC%D0%B0%D1%821.char.png
 ---
 
 **Раса:** Цветной дракон

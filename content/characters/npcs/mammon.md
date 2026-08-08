@@ -1,5 +1,6 @@
 ---
 title: Маммон
+socialImage: https://res.cloudinary.com/dlqsgzg1i/image/upload/v1780227225/portraits/%D0%9C%D0%B0%D0%BC%D0%BC%D0%BE%D0%BD.char.png
 ---
 
 **Раса:** Архидьявол
