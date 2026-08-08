@@ -1,5 +1,6 @@
 ---
 title: Перлита
+socialImage: https://res.cloudinary.com/dlqsgzg1i/image/upload/v1786209438/sizfaqmz3hjl8v8au5ow.png
 ---
 
 **Раса:** Человек
