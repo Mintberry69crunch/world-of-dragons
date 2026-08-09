@@ -1,6 +1,7 @@
 import { FileTrieNode } from "../../util/fileTrie"
 import { FullSlug, resolveRelative, simplifySlug } from "../../util/path"
 import { ContentDetails } from "../../plugins/emitters/contentIndex"
+import { getChangedSlugs, renderNewBadge } from "./newPageStatus"
 
 type MaybeHTMLElement = HTMLElement | undefined
 
@@ -156,6 +157,9 @@ function createFolderNode(
 
 async function setupExplorer(currentSlug: FullSlug) {
   const allExplorers = document.querySelectorAll("div.explorer") as NodeListOf<HTMLElement>
+  const data = await fetchData
+  const entries = [...Object.entries(data)] as [FullSlug, ContentDetails][]
+  const changedSlugs = getChangedSlugs(entries, currentSlug)
 
   for (const explorer of allExplorers) {
     const dataFns = JSON.parse(explorer.dataset.dataFns || "{}")
@@ -176,8 +180,6 @@ async function setupExplorer(currentSlug: FullSlug) {
       serializedExplorerState.map((entry: FolderState) => [entry.path, entry.collapsed]),
     )
 
-    const data = await fetchData
-    const entries = [...Object.entries(data)] as [FullSlug, ContentDetails][]
     const trie = FileTrieNode.fromEntries(entries)
 
     // Apply functions in order
@@ -219,6 +221,13 @@ async function setupExplorer(currentSlug: FullSlug) {
       fragment.appendChild(node)
     }
     explorerUl.insertBefore(fragment, explorerUl.firstChild)
+
+    for (const target of explorerUl.querySelectorAll<HTMLElement>("[data-for]")) {
+      const slug = target.dataset.for as FullSlug | undefined
+      if (!slug) continue
+      const node = trie.findNode(slug.split("/"))
+      if (node) renderNewBadge(target, node, changedSlugs)
+    }
 
     // restore explorer scrollTop position if it exists
     const scrollTop = sessionStorage.getItem("explorerScrollTop")

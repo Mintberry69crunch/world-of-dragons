@@ -1,6 +1,7 @@
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "../types"
 
 import style from "../styles/listPage.scss"
+import newPageStatusStyle from "../styles/newPageStatus.scss"
 import { PageList, SortFn } from "../PageList"
 import { Root } from "hast"
 import { htmlToJsx } from "../../util/jsx"
@@ -9,6 +10,9 @@ import { QuartzPluginData } from "../../plugins/vfile"
 import { ComponentChildren } from "preact"
 import { concatenateResources } from "../../util/resources"
 import { trieFromAllFiles } from "../../util/ctx"
+
+// @ts-ignore
+import script from "../scripts/folderContent.inline"
 
 interface FolderContentOptions {
   /**
@@ -103,7 +107,7 @@ export default ((opts?: Partial<FolderContentOptions>) => {
     ) as ComponentChildren
 
     return (
-      <div class="popover-hint">
+      <div class="popover-hint folder-content">
         <article class={classes}>{content}</article>
         <div class="page-listing">
           {options.showFolderCount && (
@@ -121,6 +125,7 @@ export default ((opts?: Partial<FolderContentOptions>) => {
     )
   }
 
-  FolderContent.css = concatenateResources(style, PageList.css)
+  FolderContent.css = concatenateResources(style, PageList.css, newPageStatusStyle)
+  FolderContent.afterDOMLoaded = script
   return FolderContent
 }) satisfies QuartzComponentConstructor

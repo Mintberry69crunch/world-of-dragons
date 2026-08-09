@@ -1,5 +1,6 @@
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import style from "./styles/explorer.scss"
+import newPageStatusStyle from "./styles/newPageStatus.scss"
 
 // @ts-ignore
 import script from "./scripts/explorer.inline"
@@ -159,7 +160,7 @@ export default ((userOpts?: Partial<Options>) => {
     )
   }
 
-  Explorer.css = style
+  Explorer.css = concatenateResources(style, newPageStatusStyle)
   Explorer.afterDOMLoaded = concatenateResources(script, overflowListAfterDOMLoaded)
   return Explorer
 }) satisfies QuartzComponentConstructor

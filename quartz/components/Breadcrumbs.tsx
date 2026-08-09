@@ -1,12 +1,18 @@
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import breadcrumbsStyle from "./styles/breadcrumbs.scss"
-import { FullSlug, SimpleSlug, resolveRelative, simplifySlug } from "../util/path"
+import newPageStatusStyle from "./styles/newPageStatus.scss"
+import { FullSlug, resolveRelative, simplifySlug } from "../util/path"
 import { classNames } from "../util/lang"
 import { trieFromAllFiles } from "../util/ctx"
+import { concatenateResources } from "../util/resources"
+
+// @ts-ignore
+import script from "./scripts/breadcrumbs.inline"
 
 type CrumbData = {
   displayName: string
   path: string
+  slug: FullSlug
 }
 
 interface BreadcrumbOptions {
@@ -35,10 +41,11 @@ const defaultOptions: BreadcrumbOptions = {
   showCurrentPage: true,
 }
 
-function formatCrumb(displayName: string, baseSlug: FullSlug, currentSlug: SimpleSlug): CrumbData {
+function formatCrumb(displayName: string, baseSlug: FullSlug, slug: FullSlug): CrumbData {
   return {
     displayName: displayName.replaceAll("-", " "),
-    path: resolveRelative(baseSlug, currentSlug),
+    path: resolveRelative(baseSlug, simplifySlug(slug)),
+    slug,
   }
 }
 
@@ -59,7 +66,7 @@ export default ((opts?: Partial<BreadcrumbOptions>) => {
     }
 
     const crumbs: CrumbData[] = pathNodes.map((node, idx) => {
-      const crumb = formatCrumb(node.displayName, fileData.slug!, simplifySlug(node.slug))
+      const crumb = formatCrumb(node.displayName, fileData.slug!, node.slug)
       if (idx === 0) {
         crumb.displayName = options.rootName
       }
@@ -80,14 +87,21 @@ export default ((opts?: Partial<BreadcrumbOptions>) => {
       <nav class={classNames(displayClass, "breadcrumb-container")} aria-label="breadcrumbs">
         {crumbs.map((crumb, index) => (
           <div class="breadcrumb-element">
-            <a href={crumb.path}>{crumb.displayName}</a>
+            <a
+              href={crumb.path}
+              data-breadcrumb-slug={crumb.slug}
+              data-breadcrumb-title={crumb.displayName}
+            >
+              {crumb.displayName}
+            </a>
             {index !== crumbs.length - 1 && <p>{` ${options.spacerSymbol} `}</p>}
           </div>
         ))}
       </nav>
     )
   }
-  Breadcrumbs.css = breadcrumbsStyle
+  Breadcrumbs.css = concatenateResources(breadcrumbsStyle, newPageStatusStyle)
+  Breadcrumbs.afterDOMLoaded = script
 
   return Breadcrumbs
 }) satisfies QuartzComponentConstructor
