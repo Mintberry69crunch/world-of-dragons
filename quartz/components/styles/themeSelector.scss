@@ -1,0 +1,222 @@
+.theme-selector {
+  position: relative;
+  width: 100%;
+  min-width: 10rem;
+  font-size: 0.92rem;
+}
+
+.theme-selector-trigger,
+.theme-option {
+  box-sizing: border-box;
+  width: 100%;
+  border: 0;
+  color: var(--darkgray);
+  font: inherit;
+  cursor: pointer;
+}
+
+.theme-selector-trigger {
+  display: grid;
+  grid-template-columns: 3.25rem minmax(0, 1fr) 3.25rem;
+  align-items: center;
+  min-height: 2.65rem;
+  padding: 0.35rem 0;
+  border: 1px solid var(--lightgray);
+  border-radius: 9px;
+  background: color-mix(in srgb, var(--light) 92%, var(--lightgray));
+  outline: none;
+  box-shadow: 0 1px 2px color-mix(in srgb, var(--dark) 8%, transparent);
+  transition:
+    border-color 0.2s ease,
+    background-color 0.2s ease,
+    box-shadow 0.2s ease;
+
+  &:hover,
+  &[aria-expanded="true"] {
+    border-color: color-mix(in srgb, var(--secondary) 55%, var(--lightgray));
+    background: color-mix(in srgb, var(--light) 96%, var(--secondary));
+  }
+
+  &:focus-visible {
+    border-color: var(--secondary);
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--secondary) 18%, transparent);
+  }
+
+  &[aria-expanded="true"] .theme-selector-chevron {
+    transform: translateY(25%) rotate(225deg);
+  }
+}
+
+.theme-selector-label {
+  min-width: 0;
+  overflow: hidden;
+  font-weight: 600;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.theme-selector-chevron {
+  justify-self: center;
+  width: 0.45rem;
+  height: 0.45rem;
+  border-right: 2px solid var(--gray);
+  border-bottom: 2px solid var(--gray);
+  transform: translateY(-25%) rotate(45deg);
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.theme-selector-trigger:hover .theme-selector-chevron {
+  border-color: var(--secondary);
+}
+
+.theme-preview {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-self: center;
+  width: 2.55rem;
+  height: 1.25rem;
+  overflow: hidden;
+  border: 1px solid color-mix(in srgb, var(--gray) 40%, transparent);
+  border-radius: 999px;
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, white 14%, transparent);
+  transition:
+    width 0.2s ease,
+    height 0.2s ease,
+    border-radius 0.2s ease;
+
+  &[data-has-image="true"] {
+    display: block;
+    width: 2.15rem;
+    height: 2.15rem;
+    border-color: color-mix(in srgb, var(--secondary) 35%, var(--lightgray));
+    border-radius: 50%;
+    box-shadow:
+      0 1px 4px color-mix(in srgb, var(--dark) 20%, transparent),
+      inset 0 0 0 1px color-mix(in srgb, white 18%, transparent);
+  }
+
+  &[data-has-image="true"] .theme-preview-color {
+    display: none;
+  }
+
+  & > .theme-preview-light {
+    background: var(--preview-light);
+  }
+
+  & > .theme-preview-accent {
+    background: var(--preview-accent);
+  }
+
+  & > .theme-preview-dark {
+    background: var(--preview-dark);
+  }
+}
+
+.theme-preview-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  border-radius: inherit;
+  object-fit: cover;
+  object-position: center 20%;
+
+  &[hidden] {
+    display: none;
+  }
+}
+
+.theme-options {
+  position: absolute;
+  z-index: 20;
+  top: calc(100% + 0.4rem);
+  left: 0;
+  box-sizing: border-box;
+  width: 100%;
+  max-height: 16rem;
+  padding: 0.35rem;
+  overflow-y: auto;
+  border: 1px solid var(--lightgray);
+  border-radius: 10px;
+  background: color-mix(in srgb, var(--light) 97%, var(--lightgray));
+  box-shadow:
+    0 12px 28px color-mix(in srgb, var(--dark) 16%, transparent),
+    0 2px 6px color-mix(in srgb, var(--dark) 8%, transparent);
+
+  &[hidden] {
+    display: none;
+  }
+}
+
+.theme-option {
+  display: grid;
+  grid-template-columns: 3.25rem minmax(0, 1fr) 1.5rem;
+  align-items: center;
+  min-height: 2.75rem;
+  padding: 0.3rem 0.25rem;
+  border-radius: 7px;
+  background: transparent;
+  outline: none;
+  transition:
+    color 0.15s ease,
+    background-color 0.15s ease;
+
+  &:hover,
+  &:focus-visible {
+    background: var(--highlight);
+    color: var(--dark);
+  }
+
+  &[aria-selected="true"] {
+    background: color-mix(in srgb, var(--secondary) 12%, transparent);
+    color: var(--dark);
+  }
+
+  &[aria-selected="true"] .theme-option-check {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.theme-option-label {
+  min-width: 0;
+  overflow: hidden;
+  font-weight: 600;
+  text-align: left;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.theme-option-check {
+  justify-self: center;
+  color: var(--secondary);
+  font-weight: 700;
+  opacity: 0;
+  transform: scale(0.65);
+  transition:
+    opacity 0.15s ease,
+    transform 0.15s ease;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+:root[saved-theme="dark"] {
+  color-scheme: dark;
+}
+
+:root[saved-theme="light"] {
+  color-scheme: light;
+}

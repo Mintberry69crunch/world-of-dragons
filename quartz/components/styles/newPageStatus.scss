@@ -28,8 +28,8 @@
     position: absolute;
     inset: 0;
     z-index: -1;
-    background: #93161a;
-    filter: drop-shadow(0 2px 4px rgb(147 22 26 / 55%));
+    background: var(--unreadBadge);
+    filter: drop-shadow(0 2px 4px rgb(0 0 0 / 28%));
     mask: url("./static/dragon_logo.svg") center / contain no-repeat;
   }
 }

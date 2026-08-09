@@ -29,12 +29,21 @@ export const defaultContentPageLayout: PageLayout = {
     Component.PageTitle(),
     Component.MobileOnly(Component.Spacer()),
     Component.Flex({
+      wrap: "wrap",
+      gap: "0.6rem 0.5rem",
       components: [
         {
           Component: Component.Search(),
           grow: true,
         },
-        { Component: Component.Darkmode() },
+        {
+          Component: Component.ThemeSelector(),
+          grow: true,
+          shrink: false,
+          basis: "100%",
+          order: 1,
+          align: "stretch",
+        },
         { Component: Component.ReaderMode() },
       ],
     }),
@@ -54,12 +63,21 @@ export const defaultListPageLayout: PageLayout = {
     Component.PageTitle(),
     Component.MobileOnly(Component.Spacer()),
     Component.Flex({
+      wrap: "wrap",
+      gap: "0.6rem 0.5rem",
       components: [
         {
           Component: Component.Search(),
           grow: true,
         },
-        { Component: Component.Darkmode() },
+        {
+          Component: Component.ThemeSelector(),
+          grow: true,
+          shrink: false,
+          basis: "100%",
+          order: 1,
+          align: "stretch",
+        },
       ],
     }),
     Component.Explorer(),
