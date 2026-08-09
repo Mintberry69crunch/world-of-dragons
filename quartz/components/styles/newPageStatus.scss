@@ -41,9 +41,23 @@
   height: 0.6rem;
 }
 
+.center article .new-page-badge-file {
+  top: -0.2rem;
+  right: -0.55rem;
+  width: 0.6rem;
+  height: 0.6rem;
+}
+
 .folder-content .page-listing .new-page-badge-file {
   top: -0.2rem;
   right: -0.7rem;
   width: 0.8rem;
   height: 0.8rem;
+}
+
+.center article a.internal[data-slug] > .new-page-badge-file {
+  top: -0.1rem;
+  right: -0.6rem;
+  width: 0.6rem;
+  height: 0.6rem;
 }

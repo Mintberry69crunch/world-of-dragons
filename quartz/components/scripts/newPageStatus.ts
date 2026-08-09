@@ -68,16 +68,27 @@ export function renderNewBadge(
   node: FileTrieNode,
   changedSlugs: Set<FullSlug>,
 ) {
+  renderBadge(target, getNewBadge(node, changedSlugs), node.isFolder)
+}
+
+export function renderNewFileBadge(
+  target: HTMLElement,
+  slug: FullSlug,
+  changedSlugs: Set<FullSlug>,
+) {
+  renderBadge(target, changedSlugs.has(slug) ? { kind: "file" } : undefined, false)
+}
+
+function renderBadge(target: HTMLElement, status: NewBadge | undefined, isFolder: boolean) {
   target.querySelector(":scope > .new-page-badge")?.remove()
   target.classList.remove("new-page-status")
 
-  const status = getNewBadge(node, changedSlugs)
   if (!status) return
 
   const badge = document.createElement("span")
   badge.className = `new-page-badge new-page-badge-${status.kind}`
   badge.textContent = status.label ?? ""
-  badge.title = node.isFolder ? `${status.label} new pages` : "New page"
+  badge.title = isFolder ? `${status.label} new pages` : "New page"
   badge.setAttribute("aria-label", badge.title)
   target.classList.add("new-page-status")
   target.appendChild(badge)

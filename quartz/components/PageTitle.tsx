@@ -19,6 +19,7 @@ PageTitle.css = `
   margin: 0;
   font-family: var(--titleFont);
 }
+
 `
 
 export default (() => PageTitle) satisfies QuartzComponentConstructor
