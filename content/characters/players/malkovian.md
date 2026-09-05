@@ -5,7 +5,7 @@ socialImage: https://res.cloudinary.com/dlqsgzg1i/image/upload/v1786213941/sdrov
 
 **Раса:** Морозный голиаф
 **Фракция:** Бывший капитан [команды «Мерзкой Галки»](../../factions/merzkaya-galka.md)
-**Местоположение:** ""
+**Местоположение:** остров [Штиль](../../stories/эрагон/арка.md#штиль-и-шторм)
 **Статус:** Жив
 
 **Портрет:** ![portrait](https://res.cloudinary.com/dlqsgzg1i/image/upload/v1786213941/sdrov46zizpbp6xelgi8.png)
