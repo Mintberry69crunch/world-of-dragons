@@ -1,9 +1,9 @@
 ---
 title: Джек
-socialImage: https://res.cloudinary.com/dlqsgzg1i/image/upload/v1786213955/zjjwzmsxysqpmbvsn4l5.png
+socialImage: https://res.cloudinary.com/dlqsgzg1i/image/upload/v1790093883/rdwsgjgipweg5yhbsiqo.png
 ---
 
-**Портрет:** ![portrait](https://res.cloudinary.com/dlqsgzg1i/image/upload/v1786213955/zjjwzmsxysqpmbvsn4l5.png)
+**Портрет:** ![portrait](https://res.cloudinary.com/dlqsgzg1i/image/upload/v1790093883/rdwsgjgipweg5yhbsiqo.png)
 
 ## Знакомство с героями
 
